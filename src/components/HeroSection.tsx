@@ -32,7 +32,7 @@ export default function HeroSection() {
         </div>
         <div className="w-1/3 relative h-full" data-aos="fade-left">
           <div className="absolute w-full h-full before:content-['']
-          before:absolute before:w-full before:h-[115%] before:left-0 before:top-[-10%] 
+          before:absolute before:w-[100%] before:h-[115%] before:left-0 before:top-[-10%] 
           before:bg-gradient-to-r before:from-yellow-400 
           before:via-amber-600 before:to-green-900 before:blur-3xl before:opacity-30"></div>
           {/* <div className="absolute w-[120%] h-full left-[-20%] [clip-path:circle(90%_at_180%_50%)] overflow-visible"> */}
