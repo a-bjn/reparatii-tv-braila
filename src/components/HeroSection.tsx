@@ -16,10 +16,10 @@ export default function HeroSection() {
         <div className="w-2/3 flex flex-col justify-between h-full text-start p-6 mt-4" data-aos="fade-right">
           <div className="flex flex-col gap-6 mb-12">
             <h1 className="text-[#FCE365] text-4xl font-bold drop-shadow-lg" data-aos="fade-down">
-              Reparatii TV Braila
+              Reparații TV Brăila
             </h1>
-            <p className="text-zinc-300 font-thin text-lg max-w-lg drop-shadow-md" data-aos="fade-up">
-              Oferim servicii rapide și de incredere pentru televizoare LCD/LED/Smart TV
+            <p className="text-zinc-300 font-semibold text-xl max-w-lg drop-shadow-md" data-aos="fade-up">
+              Oferim servicii rapide și de încredere pentru televizoare LCD/LED/Smart TV.
             </p>
           </div>
           <a
@@ -32,7 +32,7 @@ export default function HeroSection() {
         </div>
         <div className="w-1/3 relative h-full" data-aos="fade-left">
           <div className="absolute w-full h-full before:content-['']
-          before:absolute before:w-[100%] before:h-[115%] before:right-[-10%] before:top-[-10%] 
+          before:absolute before:w-[100%] before:h-[115%] before:top-[-10%] 
           before:bg-gradient-to-r before:from-yellow-400 
           before:via-amber-600 before:to-green-900 before:blur-3xl before:opacity-30"></div>
           {/* <div className="absolute w-[120%] h-full left-[-20%] [clip-path:circle(90%_at_180%_50%)] overflow-visible"> */}
