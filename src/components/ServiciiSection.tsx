@@ -17,13 +17,13 @@ export default function ServiciiSection() {
     },
     {
       icon: FaKey,
-      title: "Chei auto",
+      title: "Chei Auto",
       description: "Servicii profesionale pentru orice marca de chei auto.",
       iconSize: "6xl",
     },
     {
       icon: FaAward,
-      title: "Garanție 1 an",
+      title: "Garanție 1 An",
       description: "Beneficiați de o garanție pe o perioadă de 1 an.",
       iconSize: "6xl",
     },
