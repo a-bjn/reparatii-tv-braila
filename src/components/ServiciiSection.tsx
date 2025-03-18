@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 
 export default function ServiciiSection() {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 800, once: true });
   }, []);
 
   const services: { icon: React.ElementType; title: string; description: string; iconSize: "5xl" | "6xl" | "7xl" | "8xl" }[] = [
@@ -46,7 +46,7 @@ export default function ServiciiSection() {
           Serviciile pe care le oferim
         </h1>
         {services.map((service, index) => (
-          <div key={index} data-aos="fade-up" data-aos-delay={index * 200}>
+          <div key={index} data-aos="fade-up" data-aos-delay={index * 100}>
             <Card
               icon={service.icon}
               title={service.title}
