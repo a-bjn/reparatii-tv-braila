@@ -6,16 +6,16 @@ export default function HeroSection() {
       <div className="w-full h-full flex items-center overflow-visible">
         <div className="w-2/3 flex flex-col h-full text-start p-4 pr-10 py-10">
           <div className="flex flex-col gap-4 mb-12">
-            <h1 className="text-[#FFE14D] text-2xl font-bold drop-shadow-lg">
+            <h1 className="text-[#FCE365] text-2xl font-bold drop-shadow-lg">
               Reparatii TV Braila
             </h1>
-            <p className="text-gray-200 font-thin text-sm max-w-lg drop-shadow-md">
+            <p className="text-zinc-400 font-thin text-sm max-w-lg drop-shadow-md">
               Oferim servicii rapide și de incredere pentru televizoare LCD/LED/Smart TV
             </p>
           </div>
           <a
             href="tel:+40712345678"
-            className="w-full bg-[#FFE14D] text-black text-center font-bold py-2 rounded-full mt-auto"
+            className="w-full bg-[#FCE365] text-black text-center font-bold py-2 rounded-full mt-auto"
           >
             Sună Acum
           </a>
