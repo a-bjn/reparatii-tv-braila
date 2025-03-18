@@ -1,5 +1,6 @@
 import BrandsSection from "@/components/BrandsSection";
 import HeroSection from "@/components/HeroSection";
+import ReviewsSection from "@/components/ReviewsSection";
 import ServiciiSection from "@/components/ServiciiSection";
 
 export default function MainPage() {
@@ -8,6 +9,7 @@ export default function MainPage() {
 			<HeroSection/>
 			<ServiciiSection/>
 			<BrandsSection/>
+			<ReviewsSection/>
 		</div>
 	);
 }
