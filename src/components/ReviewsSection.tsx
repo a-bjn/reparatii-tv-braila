@@ -41,7 +41,7 @@ export default function ReviewsSection() {
 
   return (
     <section className="relative w-full h-min-screen bg-zinc-900 py-20 px-5">
-      <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-b from-black/60 to-transparent opacity-80 pointer-events-none"></div>
+      <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-b from-black/90 to-transparent opacity-90 pointer-events-none"></div>
       <div className="relative flex flex-col justify-around items-center">
         <div className="flex flex-col items-center mb-16" data-aos="fade-up">
           <p className="text-white/45 font-thin text-4xl mb-6">Media Recenziilor</p>
