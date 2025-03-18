@@ -26,7 +26,7 @@ export default function BrandsSection() {
       <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-b from-black/90 to-transparent opacity-80 pointer-events-none"></div>
 
       <div className="flex flex-col items-center justify-center lg:p-12 lg:w-3/4 sm:w-full sm:p-6">
-        <h1 className="text-[#FCE365] text-2xl font-bold drop-shadow-lg text-center mt-12 mb-10" data-aos="fade-down">
+        <h1 className="text-[#FFE14D] text-4xl font-bold drop-shadow-lg text-center mt-12 mb-10" data-aos="fade-down">
           Brand-urile cu care lucram
         </h1>
         <div
