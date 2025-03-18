@@ -11,7 +11,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative w-full h-[55vh] bg-[#131212] z-100 overflow-visible">
+    <section className="relative w-full h-[60vh] bg-[#131212] z-100 overflow-visible">
       <div className="w-full h-full flex items-center overflow-visible">
         <div className="w-2/3 flex flex-col justify-between h-full text-start p-6 mt-4" data-aos="fade-right">
           <div className="flex flex-col gap-6 mb-12">
@@ -30,19 +30,22 @@ export default function HeroSection() {
             Sună Acum
           </a>
         </div>
-        <div className="w-1/3 relative h-full overflow-visible" data-aos="fade-left">
-          <div className="absolute w-[150%] h-full left-[-50%] before:content-[''] before:absolute before:w-full before:h-[150%] before:left-0 before:top-[-30%] before:[clip-path:circle(100%_at_100%_50%)] before:bg-gradient-to-r before:from-green-800 before:via-amber-500 before:to-yellow-900 before:blur-3xl before:opacity-20"></div>
+        <div className="w-1/3 relative h-full" data-aos="fade-left">
+          <div className="absolute w-full h-full before:content-['']
+          before:absolute before:w-full before:h-[120%] before:left-0 before:top-[-10%] 
+          before:bg-gradient-to-r before:from-yellow-400 
+          before:via-amber-600 before:to-green-900 before:blur-3xl before:opacity-30"></div>
           {/* <div className="absolute w-[120%] h-full left-[-20%] [clip-path:circle(90%_at_180%_50%)] overflow-visible"> */}
           <div className="absolute w-full h-full">
             <Image
               src="/hero.jpg"
               alt="Background"
               fill
-              className="object-cover rounded-tl-4xl rounded-bl-4xl"
+              className="object-cover rounded-bl-full"
               priority
               data-aos="fade-in"
             />
-            <div className="absolute inset-0 bg-gradient-to-r rounded-tl-4xl rounded-bl-2xl from-black/80 via-black/10 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-r rounded-bl-full from-black/80 via-black/10 to-transparent"></div>
           </div>
         </div>
       </div>

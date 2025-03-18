@@ -26,11 +26,16 @@ export default function BrandsSection() {
       <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-b from-black/90 to-transparent opacity-80 pointer-events-none"></div>
 
       <div className="flex flex-col items-center justify-center lg:p-12 lg:w-3/4 sm:w-full sm:p-6">
-        <h1 className="text-[#FFE14D] text-4xl font-bold drop-shadow-lg text-center mt-12 mb-10" data-aos="fade-down">
-          Brand-urile cu care lucram
-        </h1>
+        <div className="flex flex-col items-center text-center gap-4 mt-12 mb-20" data-aos="fade-up">
+          <h1 className="text-[#FFE14D] text-4xl font-bold drop-shadow-lg" data-aos="fade-up">
+            Brandurile cu care lucrăm
+          </h1>
+          <p className="text-white/40 text-xl font-normal" data-aos="fade-up">
+            Service-ul nostru acoperă o gamă largă de televizoare de orice marcă.
+          </p>
+        </div>
         <div
-          className="bg-black/50 rounded-2xl border border-zinc-700 grid grid-cols-2 p-6 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:gap-4 sm:gap-0 w-full max-w-6xl lg:p-8 sm:p-2 lg:mb-24 sm:mb-8"
+          className="bg-black/50 rounded-2xl border border-zinc-900 grid grid-cols-2 py-12 px-6 gap-8 sm:grid-cols-3 md:grid-cols-4 lg:gap-4 sm:gap-0 w-full max-w-6xl lg:p-8 sm:p-2 lg:mb-24 sm:mb-8"
           data-aos="fade-up"
         >
           {items.map((item, index) => (
