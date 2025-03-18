@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-[40vh] bg-[#131212] z-100 overflow-visible">
+    <section className="relative w-full h-screen bg-[#131212] z-100 overflow-visible">
       <div className="w-full h-full flex items-center overflow-visible">
         <div className="w-2/3 flex flex-col h-full text-start p-4 pr-10 py-10">
           <div className="flex flex-col gap-4 mb-12">
