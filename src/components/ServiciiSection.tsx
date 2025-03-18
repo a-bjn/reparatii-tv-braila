@@ -31,7 +31,7 @@ export default function ServiciiSection() {
 
   return (
     <section className="relative w-full h-min-screen bg-[#131212] px-4 py-20 overflow-hidden">
-     <div className="absolute left-0 bottom-0 w-full h-full bg-gradient-to-t from-black/90 to-transparent opacity-80 pointer-events-none"></div>
+     <div className="absolute left-0 bottom-0 w-full h-full bg-gradient-to-t from-black/80 to-transparent opacity-80 pointer-events-none"></div>
       <div className="relative w-full h-full flex flex-col items-center gap-8">
         <h1 className="text-[#FFE14D] text-2xl font-bold drop-shadow-lg text-center mb-10">
           Serviciile pe care le oferim
