@@ -19,7 +19,7 @@ export default function ServiciiSection() {
       icon: FaKey,
       title: "Chei auto",
       description: "Servicii profesionale pentru orice marca de chei auto.",
-      iconSize: "5xl",
+      iconSize: "6xl",
     },
     {
       icon: FaAward,
