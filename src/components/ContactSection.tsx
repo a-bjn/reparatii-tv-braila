@@ -25,11 +25,10 @@ export default function ContactSection () {
   };
 
   return (
-    <section className="relative w-full h-min-screen bg-black/90 px-4 py-20 overflow-hidden">
+    <section className="relative w-full h-min-screen bg-zinc-900 px-4 py-20 overflow-hidden">
       <h1 className="text-[#FFE14D] text-4xl text-center font-bold drop-shadow-lg mb-20" data-aos="fade-up">
         Contactați-ne
       </h1>
-
       <div className="flex flex-row">
         <div className="relative w-1/5 items-center flex flex-col space-y-20" data-aos="fade-right">
           <div className="absolute w-[3%] bg-[#FFE14D] h-[80%] z-10" />
@@ -47,7 +46,7 @@ export default function ContactSection () {
             <div key={index} className="flex flex-row items-center space-x-4 z-100">
               <div className="flex flex-col">
                 <p className="text-2xl font-bold text-white/95">{title}</p>
-                <p className="font-semibold text-md text-white/60">{text}</p>
+                <p className="font-semibold text-lg text-white/60">{text}</p>
               </div>
             </div>
           ))}
