@@ -41,10 +41,10 @@ export default function ReviewsSection() {
 
   return (
     <section className="relative w-full h-min-screen bg-zinc-900 py-20 px-5">
-      <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-b from-black/90 to-transparent opacity-90 pointer-events-none"></div>
+      <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-b from-black/100 to-transparent opacity-90 pointer-events-none"></div>
       <div className="relative flex flex-col justify-around items-center">
         <div className="flex flex-col items-center mb-16" data-aos="fade-up">
-          <p className="text-white/45 font-thin text-4xl mb-6">Media Recenziilor</p>
+          <p className="text-white/50 font-thin text-4xl mb-6 text-center">Media Recenziilor</p>
           <p className="text-8xl font-thin text-white/95 mb-2">4.3/5</p>
           <div className="flex flex-row items-center text-center gap-4" data-aos="zoom-in">
             {[...Array(4)].map((_, i) => (

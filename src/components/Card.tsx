@@ -21,7 +21,7 @@ const Card: React.FC<CardProps> = ({ icon: Icon, title, description, iconSize = 
         <Icon className={`${sizeClasses[iconSize]} text-[#FCE365] ml-3 mr-4 border-r border-zinc-800 pr-4`} />
         <div className="flex flex-col">
           <p className="text-lg text-[#FCE365] font-black">{title}</p>
-          <p className="text-sm text-zinc-400 font-bold">{description}</p>
+          <p className="text-sm text-white/80 font-bold">{description}</p>
         </div>
       </div>
     </div>
