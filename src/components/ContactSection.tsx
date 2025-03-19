@@ -33,27 +33,18 @@ export default function ContactSection () {
       </h1>
 
       <div className="flex flex-row">
-        <div className="relative w-1/5 items-center flex flex-col space-y-20">
+        <div className="relative w-1/5 items-center flex flex-col space-y-20" data-aos="fade-right">
           <div className="absolute w-[3%] bg-[#FFE14D] h-[80%] z-10" />
           {contactItems.map(({ Icon }, index) => (
             <div key={index} className="flex flex-row items-center space-x-4 z-100">
               <div className="bg-zinc-900 p-3 rounded-full border border-[#FFE14D] flex items-center justify-center">
                 <Icon className="text-zinc-200 w-8 h-8" />
               </div>
-              {/* <div className="flex flex-col">
-                <p className="text-2xl font-bold text-white/95">{title}</p>
-                <p className="font-semibold text-md text-white/60">{text}</p>
-              </div> */}
             </div>
           ))}
         </div>
-        {/* <button
-          onClick={handleGetDirections}
-          className="relative mt-8 w-full py-2 bg-[#FFE14D] text-black text-lg font-bold rounded-full hover:bg-yellow-500 transition duration-300"
-        >
-          Rută către service
-        </button> */}
-        <div className="flex flex-col space-y-20 w-full h-full ml-4">
+        
+        <div className="flex flex-col space-y-20 w-full h-full ml-4"  data-aos="fade-left" data-aos-delay="1000">
           {contactItems.map(({title, text }, index) => (
             <div key={index} className="flex flex-row items-center space-x-4 z-100">
               <div className="flex flex-col">
@@ -64,6 +55,13 @@ export default function ContactSection () {
           ))}
         </div>
       </div>
+      <button
+          onClick={handleGetDirections}
+          className="relative mt-8 w-full py-2 bg-[#FFE14D] text-black text-lg font-bold rounded-full hover:bg-yellow-500 transition duration-300"
+          data-aos="fade-up"
+        >
+          Rută către service
+        </button>
     </section>
   );
 };
