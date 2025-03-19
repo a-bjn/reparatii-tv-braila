@@ -25,7 +25,7 @@ export default function ContactSection () {
   };
 
   return (
-    <section className="relative w-full h-min-screen bg-black/80 px-4 py-20 overflow-hidden">
+    <section className="relative w-full h-min-screen bg-black/40 px-4 py-20 overflow-hidden">
       <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-b from-black/80 to-transparent opacity-90 pointer-events-none"></div>
       <div className="absolute left-0 bottom-0 w-full h-1/5 bg-gradient-to-t from-black/90 to-transparent opacity-80 pointer-events-none"></div>
       <h1 className="text-[#FFE14D] text-4xl text-center font-bold drop-shadow-lg mb-20" data-aos="fade-up">
@@ -57,8 +57,9 @@ export default function ContactSection () {
       </div>
       <button
           onClick={handleGetDirections}
-          className="relative mt-8 w-full py-2 bg-[#FFE14D] text-black text-lg font-bold rounded-full hover:bg-yellow-500 transition duration-300"
+          className="relative mt-12 w-full py-2 bg-[#FFE14D] text-black text-lg font-bold rounded-full hover:bg-yellow-500 transition duration-300"
           data-aos="fade-up"
+          data-aos-delay="300"
         >
           Rută către service
         </button>
