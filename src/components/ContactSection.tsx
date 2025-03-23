@@ -1,4 +1,4 @@
-import ContactDetails from "./ContactDetails";
+import ContactContent from "./ContactContent";
 
 export default function ContactSection() {
   return (
@@ -8,7 +8,7 @@ export default function ContactSection() {
       <h1 className="text-[#FFE14D] text-4xl text-center font-bold drop-shadow-lg mb-20" data-aos="fade-up">
         Contactați-ne
       </h1>
-      <ContactDetails />
+      <ContactContent />
     </section>
   );
 }
