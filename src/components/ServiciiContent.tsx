@@ -44,8 +44,8 @@ export default function ServiciiContent() {
   }, []);
 
   return (
-    <div className="relative w-full h-full flex flex-col items-center gap-8">
-      <h1 className="text-[#FFE14D] text-4xl font-bold drop-shadow-lg text-center mt-12 mb-10" data-aos="fade-down">
+    <div className="relative w-full h-full flex flex-col items-center gap-8 md:gap-12 max-w-5xl mx-auto md:py-20">
+      <h1 className="text-[#FFE14D] text-4xl md:text-7xl font-bold drop-shadow-lg text-center mt-12 md:mt-16 mb-10 md:mb-20" data-aos="fade-down">
         Serviciile pe care le oferim
       </h1>
       {services.map((service, index) => (
