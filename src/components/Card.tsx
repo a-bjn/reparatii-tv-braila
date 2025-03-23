@@ -16,12 +16,12 @@ const Card: React.FC<CardProps> = ({ icon: Icon, title, description, iconSize = 
   };
 
   return (
-    <div className="w-full bg-black/30 rounded-2xl border border-zinc-800 p-2 md:p-6 shadow-[2px_4px_12px_0px_rgba(255,185,0,0.1)]">
+    <div className="w-full bg-black/30 rounded-2xl border border-zinc-800 p-2 md:p-4 shadow-[2px_4px_12px_0px_rgba(255,185,0,0.1)]">
       <div className="w-full flex flex-row items-center">
-        <Icon className={`${sizeClasses[iconSize]} text-[#FCE365] ml-3 md:ml-0 mr-4 md:mr-8 border-r border-zinc-800 pr-4`} />
+        <Icon className={`${sizeClasses[iconSize]} text-[#FCE365] ml-3 md:ml-2 mr-4 md:mr-8 border-r border-zinc-800 pr-4`} />
         <div className="flex flex-col md:gap-4">
-          <p className="text-lg md:text-4xl text-[#FCE365] font-bold">{title}</p>
-          <p className="text-sm md:text-4xl text-white/80 font-bold md:font-thin">{description}</p>
+          <p className="text-lg md:text-3xl text-[#FCE365] font-bold">{title}</p>
+          <p className="text-sm md:text-3xl text-white/80 font-bold md:font-thin">{description}</p>
         </div>
       </div>
     </div>
