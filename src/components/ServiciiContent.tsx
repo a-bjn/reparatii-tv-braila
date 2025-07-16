@@ -45,19 +45,21 @@ export default function ServiciiContent() {
 
   return (
     <div className="relative w-full h-full flex flex-col items-center gap-8 md:gap-12 max-w-4xl mx-auto md:py-20">
-      <h1 className="text-[#FFE14D] text-4xl md:text-7xl font-bold drop-shadow-lg text-center mt-12 md:mt-16 mb-10 md:mb-20" data-aos="fade-down">
+      <h1 className="text-[#FFE14D] text-4xl md:text-6xl font-bold drop-shadow-lg text-center mt-12 md:mt-16 mb-10 md:mb-20" data-aos="fade-down">
         Serviciile pe care le oferim
       </h1>
-      {services.map((service, index) => (
-        <div key={index} data-aos="fade-up" data-aos-delay={index * 100}>
-          <Card
-            icon={service.icon}
-            title={service.title}
-            description={service.description}
-            iconSize={service.iconSize}
-          />
-        </div>
-      ))}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full">
+        {services.map((service, index) => (
+          <div key={index} data-aos="fade-up" data-aos-delay={index * 100} className="flex-1">
+            <Card
+              icon={service.icon}
+              title={service.title}
+              description={service.description}
+              iconSize={service.iconSize}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
