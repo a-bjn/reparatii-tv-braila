@@ -44,7 +44,7 @@ export default function ServiciiContent() {
   }, []);
 
   return (
-    <div className="relative w-full h-full flex flex-col items-center gap-8 md:gap-12 max-w-4xl mx-auto md:py-20">
+    <div className="relative w-full h-full flex flex-col items-center gap-4 md:gap-12 max-w-4xl mx-auto md:py-20">
       <h1 className="text-[#FFE14D] text-4xl md:text-6xl font-bold drop-shadow-lg text-center mt-12 md:mt-16 mb-10 md:mb-20" data-aos="fade-down">
         Serviciile pe care le oferim
       </h1>

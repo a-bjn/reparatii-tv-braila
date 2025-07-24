@@ -23,7 +23,10 @@ export default function ContactContent() {
   };
 
   return (
-    <div className="relative flex flex-col w-full h-min items-center max-w-5xl mx-auto md:scale-75" >
+    <div className="relative flex flex-col w-full h-min items-center max-w-5xl mx-auto md:scale-75 gap-12" >
+      <h1 className="text-[#FFE14D] text-4xl md:text-6xl text-center font-bold drop-shadow-lg" data-aos="fade-up">
+        Contactați-ne
+      </h1>
       <div className="flex flex-row">
         <div className="relative w-1/5 items-center flex flex-col space-y-20 max-w-7xl mx-auto" data-aos="fade-right">
           <div className="absolute w-[3%] bg-[#FFE14D] h-[80%] z-10" />
