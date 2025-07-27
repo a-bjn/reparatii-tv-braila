@@ -21,14 +21,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://reparatii-tv-braila.com'),
+  metadataBase: new URL('https://reparatiitvbraila.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Reparații TV Brăila - Service Televizoare LCD/LED/Smart TV | Garanție 1 An",
     description: "Service reparatii TV Brăila. Reparăm televizoare LCD, LED, Smart TV toate mărcile: Samsung, LG, Sony, Panasonic, Philips. Garanție 1 an. Program Luni-Vineri 8:00-17:00.",
-    url: 'https://reparatii-tv-braila.com',
+    url: 'https://reparatiitvbraila.com',
     siteName: 'Reparații TV Brăila',
     locale: 'ro_RO',
     type: 'website',
