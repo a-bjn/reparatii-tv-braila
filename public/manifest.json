@@ -1,0 +1,25 @@
+{
+  "name": "Reparații TV Brăila - Service Televizoare LCD/LED/Smart TV",
+  "short_name": "Reparații TV Brăila",
+  "description": "Service reparatii TV Brăila. Reparăm televizoare LCD, LED, Smart TV toate mărcile: Samsung, LG, Sony, Panasonic, Philips. Garanție 1 an.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#131212",
+  "theme_color": "#FFE14D",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/storefront.webp",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/storefront.webp",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ],
+  "categories": ["business", "repair", "electronics"],
+  "lang": "ro",
+  "dir": "ltr"
+} 
