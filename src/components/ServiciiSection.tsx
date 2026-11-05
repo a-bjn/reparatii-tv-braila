@@ -44,7 +44,7 @@ export default function ServiciiSection() {
       const mm = gsap.matchMedia();
       mm.add(MOTION_OK, () => {
         gsap.from("[data-eyebrow]", {
-          autoAlpha: 0,
+          opacity: 0,
           x: -24,
           duration: 0.8,
           ease: "power3.out",
@@ -52,7 +52,7 @@ export default function ServiciiSection() {
         });
 
         gsap.from("[data-service]", {
-          autoAlpha: 0,
+          opacity: 0,
           y: 70,
           rotate: 1.5,
           duration: 1,

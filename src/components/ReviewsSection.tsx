@@ -48,7 +48,7 @@ export default function ReviewsSection() {
       const mm = gsap.matchMedia();
       mm.add(MOTION_OK, () => {
         gsap.from("[data-eyebrow]", {
-          autoAlpha: 0,
+          opacity: 0,
           x: -24,
           duration: 0.8,
           ease: "power3.out",
@@ -69,7 +69,7 @@ export default function ReviewsSection() {
             scrollTrigger: { trigger: card, start: "top 88%", once: true },
             delay: (i % 3) * 0.1,
           });
-          tl.from(card, { autoAlpha: 0, y: 60, duration: 0.9, ease: "power3.out" }).from(
+          tl.from(card, { opacity: 0, y: 60, duration: 0.9, ease: "power3.out" }).from(
             card.querySelectorAll("[data-star]"),
             { scale: 0, rotate: -90, duration: 0.5, ease: "back.out(3)", stagger: 0.07 },
             0.3,
@@ -102,7 +102,7 @@ export default function ReviewsSection() {
               <CountUp to={4.4} decimals={1} />
               <span className="text-2xl text-muted md:text-3xl">/5</span>
             </div>
-            <div className="flex gap-1 text-xl text-accent md:text-2xl" aria-label="4,4 din 5 stele">
+            <div className="flex gap-1 text-xl text-accent md:text-2xl" role="img" aria-label="4,4 din 5 stele">
               {[0, 1, 2, 3].map((i) => (
                 <FaStar key={i} data-score-star />
               ))}

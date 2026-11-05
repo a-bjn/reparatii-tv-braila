@@ -36,7 +36,7 @@ export default function Reveal({
       const mm = gsap.matchMedia();
       mm.add(MOTION_OK, () => {
         gsap.from(stagger !== undefined ? el.children : el, {
-          autoAlpha: 0,
+          opacity: 0,
           y,
           x,
           duration,

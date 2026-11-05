@@ -18,7 +18,9 @@ export default function HeroSection() {
         /* ---------- intro timeline ---------- */
         const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
-        tl.from("[data-fade]", { autoAlpha: 0, y: 28, duration: 0.9, stagger: 0.12, delay: 0.5 }, 0)
+        // NOTE: text must never start at opacity 0, it would delay LCP until JS runs.
+        // Only the position is animated so the copy is painted straight from the HTML.
+        tl.from("[data-fade]", { y: 24, duration: 0.8, stagger: 0.08, delay: 0.1 }, 0)
           .fromTo(
             "[data-screen]",
             { clipPath: "inset(50% 0% 50% 0%)" },
@@ -31,8 +33,8 @@ export default function HeroSection() {
             { filter: "brightness(1)", duration: 1.4, ease: "power2.out" },
             0.55,
           )
-          .from("[data-tv-frame]", { autoAlpha: 0, scale: 0.92, duration: 1, ease: "back.out(1.4)" }, 0.4)
-          .from("[data-chip]", { autoAlpha: 0, scale: 0.4, y: 20, stagger: 0.15, duration: 0.8, ease: "back.out(2)" }, 1.3);
+          .from("[data-tv-frame]", { opacity: 0, scale: 0.92, duration: 1, ease: "back.out(1.4)" }, 0.4)
+          .from("[data-chip]", { opacity: 0, scale: 0.4, y: 20, stagger: 0.15, duration: 0.8, ease: "back.out(2)" }, 1.3);
 
         /* ---------- ambient loops ---------- */
         gsap.to("[data-sweep]", {
@@ -69,7 +71,7 @@ export default function HeroSection() {
         /* ---------- scroll parallax ---------- */
         const scrollTrigger = { trigger: root.current, start: "top top", end: "bottom top", scrub: true };
         gsap.to("[data-tv]", { yPercent: -12, rotate: 2, ease: "none", scrollTrigger });
-        gsap.to("[data-copy]", { yPercent: 10, autoAlpha: 0.15, ease: "none", scrollTrigger });
+        gsap.to("[data-copy]", { yPercent: 10, opacity: 0.15, ease: "none", scrollTrigger });
         gsap.to("[data-glow]", { yPercent: 40, ease: "none", scrollTrigger });
       });
 
@@ -128,7 +130,7 @@ export default function HeroSection() {
           <SplitHeading
             as="h1"
             immediate
-            delay={0.3}
+            delay={0.05}
             className="font-display text-[clamp(2.8rem,8.5vw,6.8rem)] font-bold leading-[0.98] tracking-tight"
           >
             Reparații TV <span className="text-accent">în Brăila</span>

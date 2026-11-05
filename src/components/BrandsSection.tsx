@@ -24,7 +24,7 @@ export default function BrandsSection() {
       const mm = gsap.matchMedia();
       mm.add(MOTION_OK, () => {
         gsap.from("[data-eyebrow]", {
-          autoAlpha: 0,
+          opacity: 0,
           x: -24,
           duration: 0.8,
           ease: "power3.out",
@@ -33,7 +33,7 @@ export default function BrandsSection() {
 
         // tiles open outward from the middle like a power-on
         gsap.from("[data-brand]", {
-          autoAlpha: 0,
+          opacity: 0,
           scale: 0.7,
           y: 40,
           duration: 0.9,

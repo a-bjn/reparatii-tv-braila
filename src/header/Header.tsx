@@ -36,10 +36,10 @@ export default function Header() {
       const mm = gsap.matchMedia();
       mm.add(MOTION_OK, () => {
         // intro
-        gsap.from("[data-bar]", { y: -30, autoAlpha: 0, duration: 1, ease: "power3.out", delay: 0.2 });
+        gsap.from("[data-bar]", { y: -30, opacity: 0, duration: 1, ease: "power3.out", delay: 0.2 });
         gsap.from("[data-nav] > *", {
           y: -14,
-          autoAlpha: 0,
+          opacity: 0,
           stagger: 0.07,
           duration: 0.7,
           ease: "power3.out",

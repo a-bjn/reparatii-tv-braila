@@ -24,7 +24,7 @@ export default function ContactSection() {
       const mm = gsap.matchMedia();
       mm.add(MOTION_OK, () => {
         gsap.from("[data-eyebrow]", {
-          autoAlpha: 0,
+          opacity: 0,
           x: -24,
           duration: 0.8,
           ease: "power3.out",
@@ -44,7 +44,7 @@ export default function ContactSection() {
         );
 
         gsap.from("[data-contact-item]", {
-          autoAlpha: 0,
+          opacity: 0,
           x: -50,
           duration: 0.9,
           ease: "power3.out",
@@ -53,7 +53,7 @@ export default function ContactSection() {
         });
 
         gsap.from("[data-cta]", {
-          autoAlpha: 0,
+          opacity: 0,
           y: 30,
           duration: 0.8,
           ease: "power3.out",

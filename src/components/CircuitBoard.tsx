@@ -117,11 +117,11 @@ export default function CircuitBoard() {
         /* ---------- boot sequence ---------- */
         const boot = gsap.timeline({ delay: 0.9 });
         boot
-          .from("[data-deco]", { autoAlpha: 0, duration: 1.2 }, 0)
+          .from("[data-deco]", { opacity: 0, duration: 1.2 }, 0)
           .fromTo(
             "[data-soc]",
-            { scale: 0.5, autoAlpha: 0, svgOrigin: "400 275" },
-            { scale: 1, autoAlpha: 1, svgOrigin: "400 275", duration: 0.9, ease: "back.out(2)" },
+            { scale: 0.5, opacity: 0, svgOrigin: "400 275" },
+            { scale: 1, opacity: 1, svgOrigin: "400 275", duration: 0.9, ease: "back.out(2)" },
             0.1,
           )
           .fromTo(
@@ -137,8 +137,8 @@ export default function CircuitBoard() {
             0.5,
           )
           .from("[data-pad]", { scale: 0, transformOrigin: "50% 50%", duration: 0.5, ease: "back.out(3)", stagger: 0.03 }, 1.4)
-          .from("[data-part]", { autoAlpha: 0, scale: 0.6, transformOrigin: "50% 50%", duration: 0.5, ease: "back.out(2)", stagger: 0.08 }, 1.5)
-          .from("[data-status]", { autoAlpha: 0, y: -8, duration: 0.6 }, 1.2);
+          .from("[data-part]", { opacity: 0, scale: 0.6, transformOrigin: "50% 50%", duration: 0.5, ease: "back.out(2)", stagger: 0.08 }, 1.5)
+          .from("[data-status]", { opacity: 0, y: -8, duration: 0.6 }, 1.2);
 
         /* ---------- ambient: current pulses along every trace ---------- */
         pulses.forEach((p, i) => {
@@ -174,11 +174,11 @@ export default function CircuitBoard() {
           .call(() => setStatus("Scanare placă…", "#ffe14d"), undefined, 0)
           .fromTo(
             "[data-scan]",
-            { x: -60, autoAlpha: 0.9 },
+            { x: -60, opacity: 0.9 },
             { x: W + 60, duration: 2.2, ease: "power1.inOut" },
             0,
           )
-          .set("[data-scan]", { autoAlpha: 0 }, 2.3)
+          .set("[data-scan]", { opacity: 0 }, 2.3)
           // fault found
           .call(() => setStatus("Defect: etaj alimentare", "#ff4d4d"), undefined, 2.4)
           .to(faultBase, { stroke: "#ff4d4d", strokeOpacity: 1, strokeWidth: 3, duration: 0.2 }, 2.4)
