@@ -30,14 +30,15 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://reparatiitvbraila.com'),
+  metadataBase: new URL('https://www.reparatiitvbraila.com'),
+  applicationName: "Reparații TV Brăila",
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Reparații TV Brăila - Service Televizoare LCD/LED/Smart TV | Garanție 1 An",
     description: "Service reparatii TV Brăila. Reparăm televizoare LCD, LED, Smart TV toate mărcile: Samsung, LG, Sony, Panasonic, Philips. Garanție 1 an. Program Luni-Vineri 8:00-17:00.",
-    url: 'https://reparatiitvbraila.com',
+    url: 'https://www.reparatiitvbraila.com',
     siteName: 'Reparații TV Brăila',
     locale: 'ro_RO',
     type: 'website',
@@ -100,10 +101,24 @@ export default function RootLayout({
         <meta name="DC.date" content="2024" />
         <meta name="DC.type" content="Service" />
         <meta name="DC.format" content="text/html" />
-        <meta name="DC.identifier" content="https://reparatii-tv-braila.com" />
+        <meta name="DC.identifier" content="https://www.reparatiitvbraila.com" />
         <meta name="DC.language" content="ro" />
         <meta name="DC.coverage" content="Brăila, România" />
         <meta name="DC.rights" content="Service Reparații TV Brăila" />
+        {/* Tells Google the site name to show in search results (instead of the domain) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Reparații TV Brăila",
+              "alternateName": ["Reparatii TV Braila", "Service TV Brăila", "reparatiitvbraila.com"],
+              "url": "https://www.reparatiitvbraila.com/",
+              "inLanguage": "ro-RO",
+            }),
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -112,7 +127,7 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               "name": "Reparații TV Brăila",
               "description": "Service reparatii TV Brăila. Oferim servicii de reparatii TV. Reparăm televizoare LCD, LED, Smart TV toate mărcile: Samsung, LG, Sony, Panasonic, Philips. Garanție 1 an.",
-              "url": "https://reparatii-tv-braila.com",
+              "url": "https://www.reparatiitvbraila.com/",
               "telephone": "+40729026656",
               "address": {
                 "@type": "PostalAddress",
