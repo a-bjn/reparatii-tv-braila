@@ -1,12 +1,21 @@
 import type { Metadata } from "next";
-import { Comfortaa } from "next/font/google";
+import { Space_Grotesk, Manrope } from "next/font/google";
 import "./globals.css";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
+import ScrollProgress from "@/components/ui/ScrollProgress";
 
-const comfortaa = Comfortaa({
-  subsets: ['latin'],
-  weight: ["300", "400", "500", "600", "700"],
+// latin-ext is required for Romanian diacritics (ș, ț, ă, â, î)
+const display = Space_Grotesk({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const body = Manrope({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-body",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -256,8 +265,9 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${comfortaa.className} antialiased`}
+        className={`${display.variable} ${body.variable} grain bg-bg font-sans text-fg antialiased`}
       >
+        <ScrollProgress />
         <Header />
         {children}
         <Footer />
